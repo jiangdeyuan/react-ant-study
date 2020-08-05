@@ -1,15 +1,18 @@
 import React from 'react';
-import { RouteWithSubRoutes } from './router/router'
+import { RouteWithSubRoutes } from '../router/router'
 import { Switch } from "react-router-dom";
-const App = ({ routes }) => {
-    console.log(routes);
+const Layouts = ({ routes }) => {
     return (
-        <div id="app">
-            app
+        <div id="layouts">
+            layouts
             <Switch>
                 <RouteWithSubRoutes routes={routes} />
             </Switch>
         </div>
     );
 }
-export default App;
+
+export default Layouts;
+
+
+
